@@ -12,7 +12,7 @@ namespace Trabajo_Practico1
         static void Main(string[] args)
         {
             string nombre, destino, clase="";
-            int dni, edad, claseVuelo, equipaje, equipajePago= 0, perroServicio, modificarDatos, dniTutor, servicioMNA = 0, cantidadEquipaje = 0, pesoEquipaje = 0;
+            int dni, edad, claseVuelo, equipaje, equipajePago= 0, perroServicio, dniTutor = 0, servicioMNA = 0, cantidadEquipaje = 0, pesoEquipaje = 0;
             int pesoExcedido= 0, precioExcedido = 0;
             Random random = new Random();
             string letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
