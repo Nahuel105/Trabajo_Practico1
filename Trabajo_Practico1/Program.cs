@@ -133,6 +133,22 @@ namespace Trabajo_Practico1
             Console.WriteLine("\n \n \n \n \n \n");
 
             Console.WriteLine("Pasajero/a: " + nombre + "\nDNI: " + dni + "\nEdad: " + edad + "\nDestino: " + destino + "\nClase de vuelo: " +clase);
+            if (edad >= 2 && edad < 5)
+            {
+                Console.WriteLine("DNI Tutor: " + dniTutor);
+            }
+            else if (edad >= 5 && edad < 11)
+            {
+                switch (servicioMNA)
+                {
+                    case 1:
+                        Console.WriteLine("Servicio menor no acompañado: SI");
+                        break;
+                    case 0:
+                        Console.WriteLine("DNI Tutor: " + dniTutor);
+                        break;
+                }
+            }
             Console.WriteLine($"Equipaje de mano: {(equipaje == 1 ? "Sí" : "No")}" + ($"\nEquipaje de facturado: {(equipajePago == 1 ? "Sí" : "No")}") + $"\nPerro de servicio: {(perroServicio == 1 ? "Sí" : "No")}" + "\nAbonar por valijas: " +"$"+ precioExcedido);
             Console.WriteLine("Numero: " + tarjetaEmbarque + "\nFecha y hora: " + dateTime + "\nMuchos exitos en " + destino+" le desea QualityFLy \nGracias por elegirnos!");
             
